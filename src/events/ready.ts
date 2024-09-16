@@ -1,6 +1,7 @@
 import { Client } from "discord.js";
 import { loadCommands, deployCommands } from "../utils/slash-commands";
 import { loadChatTriggers } from "../programs/triggers";
+import { loadSettings } from "../programs/settings";
 
 export const onReady = async (bot: Client) => {
   if (bot.user) {
@@ -9,6 +10,7 @@ export const onReady = async (bot: Client) => {
   }
   await loadCommands();
   await deployCommands();
+  await loadSettings();
   await loadChatTriggers();
   console.log("✅  Bot Ready!");
 };

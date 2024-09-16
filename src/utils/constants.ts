@@ -12,9 +12,9 @@ const chatGamesRole: string = process.env.CHAT_GAMES_ROLE || "";
 const chatGamesCategoryId: string = process.env.CATEGORY_ID || "";
 const serverReviveRoleId: string = process.env.SERVER_REVIVE_ROLE || "";
 const channelId: string = process.env.GAME_CHANNEL_ID || "";
+const countingChannelId: string = process.env.COUNTING_CHANNEL_ID || "";
 const dbUri: string = process.env.DB_URI || "";
 const dbName: string = process.env.DB_NAME || "";
-const cookieUsers: string[] = process.env.COOKIE_USERS?.split(" ") || [];
 
 const iconURL =
   "https://cdn.discordapp.com/attachments/871801727974785055/937070492366561352/outline_place_white_24dp.png";
@@ -36,9 +36,9 @@ export {
   serverReviveRoleId,
   chatGamesCategoryId,
   channelId,
+  countingChannelId,
   dbUri,
   dbName,
   iconURL,
   gameInstructions,
-  cookieUsers,
 };
